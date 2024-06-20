@@ -46,5 +46,5 @@ function generatePersonalia() {
     };
 }
 
-const newCharacter = generatePersonalia();
+export const newCharacter = generatePersonalia();
 console.log(newCharacter);

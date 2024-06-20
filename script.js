@@ -1,3 +1,3 @@
-import { genderP } from "./js/personalia.js";
+//import { genderP } from "./js/personalia.js";
 
-genderP();
+//genderP();
