@@ -35,16 +35,25 @@ function generatePersonalia() {
     //Randomly selected attributes
     let selectGender = getRandomPersonalia(gender);
     let selectPronouns = getRandomPersonalia(pronouns);
-
+    let selectAge = getRandomPersonalia(age);
+    let selectRace = getRandomPersonalia(race);
+    let selectOrigin = getRandomPersonalia(origin);
+    let selectSexuality = getRandomPersonalia(sexuality);
 
 
 
     //Create and return the character object
     return {
         gender: selectGender,
-        pronouns: selectPronouns
+        pronouns: selectPronouns,
+        age: selectAge,
+        race: selectRace,
+        origin: selectOrigin,
+        sexuality:selectSexuality
     };
 }
 
-export const newCharacter = generatePersonalia();
+const newCharacterPerson = generatePersonalia();
+
+export {generatePersonalia};
 console.log(newCharacter);
