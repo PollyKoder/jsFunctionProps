@@ -10,5 +10,12 @@ let drink = ["Coffe", "Tea", "Chai", "Water", "Soda", "Juice", "Milk"];
 
 
 function generateTrivia() {
-    const getRandomTrivia  = (arr) =>
+    const getRandomTrivia  = (arr) => {
+        return [Math.floor(Math.random() * arr.length)];
+    }
+
+    let selectHair = getRandomTrivia(hairColour),
+    let selectCut = getRandomTrivia(hairCut),
+    let selectHobby = generateTrivia(hobby),
 }
+
