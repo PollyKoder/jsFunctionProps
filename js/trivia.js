@@ -19,7 +19,7 @@ function generateTrivia() {
     let selectHobby = generateTrivia(hobby);
 
     return {
-        hairColour = selectHair,
+        hairColour: selectHair,
 
     }
 }
