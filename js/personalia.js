@@ -30,7 +30,7 @@ function generatePersonalia() {
     
 
     const getRandomPersonalia = (arr) => {
-        return arr[Math.floor(Math.random() * arr.length)];
+        return arr[Math.floor(Math.random() * arr.length)]; 
     }
 
     //I mostly feel like I'm copying the code at this point, but am trying to make some changes, with the other js files in mind

@@ -1,0 +1,1 @@
+//have some "let"s conatin various types of Yokai that can show up as the characters companion. Disregard for now, this is for extra fun

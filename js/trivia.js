@@ -7,3 +7,8 @@ let favGenre = ["Fantasy", "Sci-fi", "Historical", "Fiction", "Non-fiction", "Ho
 // let currentBookMovie = []
 // let favPlant = ["Blood Oak", "Orchid", "Sakura", "Lavender", "Jasmin", "Daisy", "Lilacs"];
 let drink = ["Coffe", "Tea", "Chai", "Water", "Soda", "Juice", "Milk"];
+
+
+function generateTrivia() {
+    const getRandomTrivia  = (arr) =>
+}
