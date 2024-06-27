@@ -14,8 +14,13 @@ function generateTrivia() {
         return [Math.floor(Math.random() * arr.length)];
     }
 
-    let selectHair = getRandomTrivia(hairColour),
-    let selectCut = getRandomTrivia(hairCut),
-    let selectHobby = generateTrivia(hobby),
+    let selectHair = getRandomTrivia(hairColour);
+    let selectCut = getRandomTrivia(hairCut);
+    let selectHobby = generateTrivia(hobby);
+
+    return {
+        hairColour = selectHair,
+
+    }
 }
 
