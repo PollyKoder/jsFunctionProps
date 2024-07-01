@@ -5,22 +5,32 @@ let hairCut = ["Long hair", "Buzz-cut", "Bob-cut", "Shoulder-length"];
 let hobby = ["Painting", "Drawing", "Sewing", "Knitting", "Reading", "Adventure Hikes", "Games", "Cooking", "Cosplay"];
 let favGenre = ["Fantasy", "Sci-fi", "Historical", "Fiction", "Non-fiction", "Horror", "Thriller", "Comedy", "Romance"];
 // let currentBookMovie = []
-// let favPlant = ["Blood Oak", "Orchid", "Sakura", "Lavender", "Jasmin", "Daisy", "Lilacs"];
+let favPlant = ["Blood Oak", "Orchid", "Sakura", "Lavender", "Jasmine", "Daisy", "Lilacs", "Roses", "Lily"];
 let drink = ["Coffe", "Tea", "Chai", "Water", "Soda", "Juice", "Milk"];
 
 
 function generateTrivia() {
     const getRandomTrivia  = (arr) => {
-        return [Math.floor(Math.random() * arr.length)];
+        return arr[Math.floor(Math.random() * arr.length)];
     }
 
     let selectHair = getRandomTrivia(hairColour);
     let selectCut = getRandomTrivia(hairCut);
-    let selectHobby = generateTrivia(hobby);
+    let selectHobby = getRandomTrivia(hobby);
+    let selectGenre = getRandomTrivia(favGenre);
+    let selectPlant = getRandomTrivia(favPlant);
+    let selectDrink = getRandomTrivia(drink);
+
 
     return {
         hairColour: selectHair,
-
+        hairCut: selectCut,
+        hobby: selectHobby,
+        favGenre: selectGenre,
+        favPlant: selectPlant,
+        drink: selectDrink
     }
-}
+};
+
+export {generateTrivia};
 

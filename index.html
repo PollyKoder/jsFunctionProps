@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
     <title>Character generator</title>
 </head>
 <body>
@@ -12,25 +12,29 @@
         <div id="header"></div>
     </header>
 
-    <main>
+    <main class="main">
         <p>This button will generate a character for you</p>
-        <button >click me</button>
+        <button class="generateC" id="buttonC">Click me</button>
 
         <!--Parent div to make the different containers for the different character info that is generated easier 
         to display withing one div-card/flex-box -->
         <div class="parentDiv" id="divParent">
+            <p class="fillText">Your character will be displayed here</p>
             <!-- div to add character info like: gender, age, race, sexuality. from js strings-->
-            <div class="choreP" id="personalia"></div>
+            <!-- <div class="choreP" id="personalia"></div> -->
 
             <!-- div to character info like: stamina, health, personality trait(optimist, pessimist, warrior, healer, spiritual?), bonus: (ex:) stealth? -->
-            <div class="choreS" id="strength"></div>
+            <!-- <div class="choreS" id="strength"></div> -->
 
             <!-- div to add character info like: current hair color, main hobby, favorite show/book, fav flower-->
-            <div class="choreT" id="trivia"></div>
+            <!-- <div class="choreT" id="trivia"></div> -->
         </div>
         
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <p>Page created by Polly H. Riviera</p>
+        <p>Github: <a>https://github.com/PollyKoder/jsFunctionProps</a></p>
+    </footer>
 </body>
 </html>

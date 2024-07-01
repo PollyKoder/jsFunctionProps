@@ -54,11 +54,11 @@ function generatePersonalia() {
         sexuality:selectSexuality
     };
 }
-
+ 
 const newCharacterPerson = generatePersonalia();
 
 export {generatePersonalia};
-console.log(newCharacterPerson);
+//console.log(newCharacterPerson);
 
 
 //Personal note: tried getting chatGpts method to work, it just gave me errors so I'll try a slightly different approach

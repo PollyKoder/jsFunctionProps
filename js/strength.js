@@ -18,12 +18,12 @@ function generateStrength() {
     return {
         stamina: selectStamina,
         health: selectHealth,
-        traits: selectTrait,
+        trait: selectTrait,
         bonus: selectBonus
     };
 }
 
-const newCharacterStrength = generateStrength();
+//const newCharacterStrength = generateStrength();
 
 export {generateStrength};
-console.log(newCharacterStrength);
+//console.log(newCharacterStrength);
